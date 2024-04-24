@@ -1,1 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-main: 'Intel';
+  --font-accent: 'PressStart2P';
+  --weight-title: 700;
+  --weight-text: 400;
+  --bg-color: #FFF;
+  --accent-color: #000;
+  --bg-image: repeating-linear-gradient(#d3d3d3,#d3d3d3 2px, transparent 2px, transparent 4px), 
+    repeating-linear-gradient(90deg,#d3d3d3,#d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  --heading-font-size:clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  --heading-description-font-size:clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --label-size: 14px;
+}
