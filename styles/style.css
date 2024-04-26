@@ -249,7 +249,7 @@ button:hover::after {
 
 .button__text {
   position: relative;
-  mix-blend-mode: hard-light;
+  mix-blend-mode: difference;
 }
 
 .button_save {
