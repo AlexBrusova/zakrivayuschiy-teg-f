@@ -15,6 +15,15 @@
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --label-size: 14px;
   --sparks-color: #ff0000;
+  --heading-font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+
+  .button-text-color {
+    color: #fff;
+  }
+
+  .floppy-color {
+    color: white;
+  }
 }
 
 :root.theme-dark {
@@ -28,6 +37,7 @@
     linear-gradient(180deg, #007f0c 0%, #004306 100%);
   --label-size: 14px;
   --sparks-color: #ff0000;
+  --heading-font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,5 +52,6 @@
       linear-gradient(180deg, #007f0c 0%, #004306 100%);
     --label-size: 14px;
     --sparks-color: #ff0000;
+    --heading-font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   }
 }

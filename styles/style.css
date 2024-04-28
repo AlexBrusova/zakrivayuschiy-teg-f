@@ -187,6 +187,7 @@ button:hover::after {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  gap: 50px;
 }
 
 .card {
@@ -255,7 +256,7 @@ button:hover::after {
 .button_save {
   display: flex;
   align-items: center;
-  margin: 52px 0 100px;
+  margin: 2px 0 100px;
   padding: 15px 20px;
   gap: 8px;
 }
@@ -266,6 +267,7 @@ button:hover::after {
   width: 28px;
   color: var(--accent-color);
   mix-blend-mode: difference;
+  flex-shrink: 0;
 }
 
 .button::before {
@@ -310,7 +312,69 @@ button:hover::after {
   cursor: pointer;
   transform-origin: center;
 }
-/* Футер */
+
+.popup {
+  width: 375px;
+  border: 2px solid var(--accent-color);
+  padding: 30px;
+  color: var(--accent-color);
+  font-family: var(--font-accent);
+  font-size: 14px;
+  background-color: var(--bg-color);
+}
+
+.popup[open] {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  gap: 30px 20px;
+}
+
+.popup[open]::backdrop {
+  background-color: rgba(0 0 0/ 0.75);
+}
+
+.popup__controller {
+  grid-column: 1/-1;
+}
+
+.popup__close-button {
+  width: 293px;
+  height: 38px;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.sepia {
+  filter: sepia(80%);
+}
+
+.brightness {
+  filter: brightness(200%);
+}
+
+.contrast {
+  filter: contrast(150%);
+}
+
+.blur {
+  filter: blur(0.2rem);
+}
+
+.saturate {
+  filter: saturate(158%);
+}
+
+.grayscale {
+  filter: grayscale(0.8);
+}
+
+.mix {
+  filter: brightness(200%) saturate(60%) hue-rotate(60deg);
+}
 
 @media (width <= 375px) {
   .header {
@@ -332,5 +396,9 @@ button:hover::after {
 
   .button_type_save svg {
     height: 84px;
+  }
+
+  .popup__close-button {
+    width: 257px;
   }
 }
