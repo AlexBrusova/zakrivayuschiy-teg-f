@@ -89,6 +89,7 @@
   font-family: var(--font-accent);
   font-size: 14px;
   line-height: 12.6px;
+  color: var(--button-color);
 }
 
 .button:focus-visible {
@@ -219,8 +220,7 @@ button:hover::after {
 
 .card__heading {
   font-size: 18px;
-  margin-bottom: 3px;
-  margin-top: 3px;
+  margin: 3px 10px;
 }
 
 .card__image {
@@ -273,9 +273,9 @@ button:hover::after {
   position: relative;
   height: 28px;
   width: 28px;
-  color: var(--accent-color);
   mix-blend-mode: difference;
   flex-shrink: 0;
+  color: var(--floppy-color);
 }
 
 .button::before {
@@ -320,7 +320,8 @@ button:hover::after {
 }
 
 .popup {
-  width: 375px;
+  width: 353px;
+  height: 191px;
   border: 2px solid var(--accent-color);
   padding: 30px;
   color: var(--accent-color);
@@ -329,6 +330,7 @@ button:hover::after {
   background-color: var(--bg-color);
   font-weight: var(--weight-text);
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .popup[open] {
@@ -349,6 +351,7 @@ button:hover::after {
 .popup__close-button {
   width: 293px;
   height: 38px;
+  text-transform: uppercase;
 }
 
 form {
@@ -402,11 +405,11 @@ form {
     padding: 30px 40px;
   }
 
-  .button_type_save svg {
-    height: 84px;
-  }
-
   .popup__close-button {
     width: 257px;
+  }
+
+  .card__heading {
+    margin: 4px 10px 6px;
   }
 }

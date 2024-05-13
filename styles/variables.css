@@ -14,4 +14,6 @@
   --label-size: 14px;
   --sparks-color: #ff0000;
   --heading-font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  --button-color: #fff;
+  --floppy-color: #fff;
 }
