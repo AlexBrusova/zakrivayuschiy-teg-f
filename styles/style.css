@@ -321,7 +321,7 @@ button:hover::after {
 
 .popup {
   width: 353px;
-  height: 191px;
+  min-height: 191px;
   border: 2px solid var(--accent-color);
   padding: 30px;
   color: var(--accent-color);
